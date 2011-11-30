@@ -9,18 +9,13 @@ Author: Matt Rude
 Author URI: http://mattrude.com
 */
 
-define(WEBMASTER_TOOLS_TEXTDOMAIN, 'mdr-network');
+define( 'WEBMASTER_TOOLS_TEXTDOMAIN' , 'mdr-network');
 
 $currentLocale = get_locale();
 if(!empty($currentLocale)) {
-   $moFile = "/var/www/therudes.com/wp-content/mu-plugins/languages/" .  $currentLocale . ".mo";
+   $moFile = dirname(__FILE__) .  $currentLocale . ".mo";
    if(@file_exists($moFile) && is_readable($moFile)) load_textdomain('mdr-network', $moFile);
 }
-
-
-//if (function_exists('load_plugin_textdomain')) {
-//   load_plugin_textdomain(WEBMASTER_TOOLS_TEXTDOMAIN, false, dirname(__FILE__).'/languages' );
-//}
 
 function add_mdr_webmaster_tools() {
    global $mdr_webmaster_tools_hook;
