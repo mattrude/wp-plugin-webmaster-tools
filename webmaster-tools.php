@@ -218,6 +218,7 @@ function mdr_webmaster_tools_page() {
     div.robots_txt_out {border: 1px solid #CCC;float: left;height: 220px;margin-right: 25px;margin: 0px 5px 10px;padding: 10px;width: 45%;}
     div.robots_txt_in_lable {clear: left;float: left;margin-right: 25px;margin: 0px 5px;width: 45%;}
     div.robots_txt_out_lable {float: left;margin-right: 25px;margin: 0px 10px;padding: 0 20px;width: 45%;}
+    div.reset {float: right;padding: 5px;}
   </style>
   <div class="wrap">
     <div id="icon-themes" class="icon32"><br></div>
@@ -321,7 +322,7 @@ function mdr_webmaster_tools_page() {
 	  <div class="robots_txt_out_lable"><strong><?php _e('Your Current Robots.txt file', WEBMASTER_TOOLS_TEXTDOMAIN); ?>:</strong></div>
 	  <div class="robots_txt_in">
               <textarea id="site_robots_txt" name="site_robots_txt" rows="10" cols="45" class="widefat"><?php echo $site_robots_txt_out; ?></textarea>
-	<div style="float: right;padding: 10px;">
+	<div class="reset">
           <input type="submit" name="reset_robots" class="reset" value="<?php _e('reset robots.txt', WEBMASTER_TOOLS_TEXTDOMAIN); ?>" /> 
 	</div>
 	  </div>
