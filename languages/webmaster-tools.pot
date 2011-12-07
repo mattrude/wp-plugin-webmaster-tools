@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: webmaster-tools 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-30 11:35-0600\n"
+"POT-Creation-Date: 2011-12-06 22:42-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,120 +17,137 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: webmaster-tools.php:22 webmaster-tools.php:220
+#: webmaster-tools.php:22 webmaster-tools.php:54 webmaster-tools.php:55
+#: webmaster-tools.php:254
 msgid "Webmaster Tools"
 msgstr ""
 
-#: webmaster-tools.php:38
+#: webmaster-tools.php:45
+msgid "Overview"
+msgstr ""
+
+#: webmaster-tools.php:56
 msgid "Here's how you optain and setup each search engines key's"
 msgstr ""
 
-#: webmaster-tools.php:39 webmaster-tools.php:225 webmaster-tools.php:234
+#: webmaster-tools.php:57 webmaster-tools.php:259 webmaster-tools.php:268
 msgid "Google Webmaster Tools"
 msgstr ""
 
-#: webmaster-tools.php:41
+#: webmaster-tools.php:59
 msgid "Log in to "
 msgstr ""
 
-#: webmaster-tools.php:41
+#: webmaster-tools.php:59
 msgid "with your Google account."
 msgstr ""
 
-#: webmaster-tools.php:42
+#: webmaster-tools.php:60
 msgid "Enter your blog URL and click <code>Add Site</code>."
 msgstr ""
 
-#: webmaster-tools.php:43
+#: webmaster-tools.php:61
 msgid ""
 "You will be presented with several verification methods. Choose <code>Meta "
 "Tag</code>."
 msgstr ""
 
-#: webmaster-tools.php:44 webmaster-tools.php:57
+#: webmaster-tools.php:62 webmaster-tools.php:75
 msgid "Copy the meta tag, which looks something like"
 msgstr ""
 
-#: webmaster-tools.php:46 webmaster-tools.php:59 webmaster-tools.php:73
+#: webmaster-tools.php:64 webmaster-tools.php:77 webmaster-tools.php:91
 msgid "Leave the verification page open and go to your blog dashboard."
 msgstr ""
 
-#: webmaster-tools.php:47 webmaster-tools.php:60 webmaster-tools.php:74
+#: webmaster-tools.php:65 webmaster-tools.php:78 webmaster-tools.php:92
 msgid "Open the Tools Page and paste the code in the appropriate field."
 msgstr ""
 
-#: webmaster-tools.php:48 webmaster-tools.php:61 webmaster-tools.php:75
+#: webmaster-tools.php:66 webmaster-tools.php:79 webmaster-tools.php:93
 msgid "Click on <code>Save Changes</code>."
 msgstr ""
 
-#: webmaster-tools.php:49
+#: webmaster-tools.php:67
 msgid "Go back to the verification page and click <code>Verify</code>."
 msgstr ""
 
-#: webmaster-tools.php:52
+#: webmaster-tools.php:70
 msgid "Yahoo Site Explorer"
 msgstr ""
 
-#: webmaster-tools.php:54 webmaster-tools.php:68
+#: webmaster-tools.php:72 webmaster-tools.php:86
 msgid "Log in to"
 msgstr ""
 
-#: webmaster-tools.php:54
+#: webmaster-tools.php:72
 msgid "with your Yahoo account."
 msgstr ""
 
-#: webmaster-tools.php:55
+#: webmaster-tools.php:73
 msgid "Enter your blog URL and click <code>Add My Site</code>."
 msgstr ""
 
-#: webmaster-tools.php:56
+#: webmaster-tools.php:74
 msgid ""
 "You will be presented with several authentication methods. Choose <code>By "
 "adding a META tag to my home page.</code>."
 msgstr ""
 
-#: webmaster-tools.php:62
+#: webmaster-tools.php:80
 msgid ""
 "Go back to the verification page and click <code>Ready to Authenticate</"
 "code>."
 msgstr ""
 
-#: webmaster-tools.php:64
+#: webmaster-tools.php:82
 msgid "Note: It may take up to 24 hours for your site to be authenticated."
 msgstr ""
 
-#: webmaster-tools.php:66 webmaster-tools.php:228 webmaster-tools.php:254
+#: webmaster-tools.php:84 webmaster-tools.php:262 webmaster-tools.php:288
 msgid "Bing Webmaster Center"
 msgstr ""
 
-#: webmaster-tools.php:68
+#: webmaster-tools.php:86
 msgid "with your Live! account."
 msgstr ""
 
-#: webmaster-tools.php:69
+#: webmaster-tools.php:87
 msgid "Click <code>Add a Site</code>."
 msgstr ""
 
-#: webmaster-tools.php:70
+#: webmaster-tools.php:88
 msgid "Enter your blog URL and click <code>Submit</code>."
 msgstr ""
 
-#: webmaster-tools.php:71
+#: webmaster-tools.php:89
 msgid ""
 "Copy the meta tag from the text area at the bottom. It looks something like"
 msgstr ""
 
-#: webmaster-tools.php:76
+#: webmaster-tools.php:94
 msgid ""
 "Go back to the verification page and click <code>Return to the Site list</"
 "code>."
 msgstr ""
 
-#: webmaster-tools.php:78
+#: webmaster-tools.php:103
+msgid "Analytics"
+msgstr ""
+
+#: webmaster-tools.php:104
+msgid "Google Analytics Tracking"
+msgstr ""
+
+#: webmaster-tools.php:112
+msgid "Robots"
+msgstr ""
+
+#: webmaster-tools.php:113
 msgid "The Robots.txt File"
 msgstr ""
 
-#: webmaster-tools.php:79
+#: webmaster-tools.php:114
 msgid ""
 "The <strong>robots.txt</strong> file is a way to prevent cooperating web "
 "spiders and other web robots from accessing all or part of a website which "
@@ -138,33 +155,33 @@ msgid ""
 "categorize and archive web sites, or by webmasters to proofread source code."
 msgstr ""
 
-#: webmaster-tools.php:80
+#: webmaster-tools.php:115
 msgid "To Allow all robots"
 msgstr ""
 
-#: webmaster-tools.php:81
+#: webmaster-tools.php:116
 msgid ""
 "To allow any robot to access your entire site, you can simply leave the "
 "robots.txt file blank, or you could use this"
 msgstr ""
 
-#: webmaster-tools.php:83
+#: webmaster-tools.php:118
 msgid ">To Ban all robots"
 msgstr ""
 
-#: webmaster-tools.php:85
+#: webmaster-tools.php:120
 msgid "To Ban all crawlers from four directories of a website"
 msgstr ""
 
-#: webmaster-tools.php:186 webmaster-tools.php:197
+#: webmaster-tools.php:220 webmaster-tools.php:231
 msgid "You cannot edit this screen."
 msgstr ""
 
-#: webmaster-tools.php:222
+#: webmaster-tools.php:256
 msgid "Site Verification"
 msgstr ""
 
-#: webmaster-tools.php:223
+#: webmaster-tools.php:257
 msgid ""
 "All three major search engines provide webmaster tools that give you "
 "detailed information and statistics about how they see and crawl your "
@@ -172,42 +189,42 @@ msgid ""
 "your sites."
 msgstr ""
 
-#: webmaster-tools.php:224
+#: webmaster-tools.php:258
 msgid "Enter your meta key \"content\" value to verify your blog with"
 msgstr ""
 
-#: webmaster-tools.php:226 webmaster-tools.php:244
+#: webmaster-tools.php:260 webmaster-tools.php:278
 msgid "Yahoo! Site Explorer"
 msgstr ""
 
-#: webmaster-tools.php:227
+#: webmaster-tools.php:261
 msgid "and"
 msgstr ""
 
-#: webmaster-tools.php:237 webmaster-tools.php:247 webmaster-tools.php:257
-#: webmaster-tools.php:276 webmaster-tools.php:294
+#: webmaster-tools.php:271 webmaster-tools.php:281 webmaster-tools.php:291
+#: webmaster-tools.php:310 webmaster-tools.php:328
 msgid "Disabled"
 msgstr ""
 
-#: webmaster-tools.php:237 webmaster-tools.php:247 webmaster-tools.php:257
-#: webmaster-tools.php:276 webmaster-tools.php:296
+#: webmaster-tools.php:271 webmaster-tools.php:281 webmaster-tools.php:291
+#: webmaster-tools.php:310 webmaster-tools.php:330
 msgid "Enabled"
 msgstr ""
 
-#: webmaster-tools.php:241 webmaster-tools.php:251 webmaster-tools.php:261
-#: webmaster-tools.php:280
+#: webmaster-tools.php:275 webmaster-tools.php:285 webmaster-tools.php:295
+#: webmaster-tools.php:314
 msgid "Example"
 msgstr ""
 
-#: webmaster-tools.php:268
+#: webmaster-tools.php:302
 msgid "Google Analytics Tracking Script"
 msgstr ""
 
-#: webmaster-tools.php:269 webmaster-tools.php:270
+#: webmaster-tools.php:303 webmaster-tools.php:304
 msgid "Google Analytics"
 msgstr ""
 
-#: webmaster-tools.php:269
+#: webmaster-tools.php:303
 msgid ""
 "is a web analytics solution that gives you rich insights into your website "
 "traffic and marketing effectiveness. Powerful, flexible and easy-to-use "
@@ -217,39 +234,39 @@ msgid ""
 "websites."
 msgstr ""
 
-#: webmaster-tools.php:270
+#: webmaster-tools.php:304
 msgid "Enter your"
 msgstr ""
 
-#: webmaster-tools.php:270
+#: webmaster-tools.php:304
 msgid "Account ID"
 msgstr ""
 
-#: webmaster-tools.php:270
+#: webmaster-tools.php:304
 msgid "for this site, to allow"
 msgstr ""
 
-#: webmaster-tools.php:270
+#: webmaster-tools.php:304
 msgid "to track you page views."
 msgstr ""
 
-#: webmaster-tools.php:273
+#: webmaster-tools.php:307
 msgid "Google Analytics Tracking ID"
 msgstr ""
 
-#: webmaster-tools.php:287
+#: webmaster-tools.php:321
 msgid "CDN Network URL"
 msgstr ""
 
-#: webmaster-tools.php:288
+#: webmaster-tools.php:322
 msgid "A"
 msgstr ""
 
-#: webmaster-tools.php:288
+#: webmaster-tools.php:322
 msgid "Content Delivery Network (CDN)"
 msgstr ""
 
-#: webmaster-tools.php:288
+#: webmaster-tools.php:322
 msgid ""
 "is a system of computers containing copies of data, placed at various points "
 "in a network so as to maximize bandwidth for access to the data from clients "
@@ -258,62 +275,62 @@ msgid ""
 "to avoid bottlenecks near that server."
 msgstr ""
 
-#: webmaster-tools.php:291
+#: webmaster-tools.php:325
 msgid "CDN Site URL"
 msgstr ""
 
-#: webmaster-tools.php:305
+#: webmaster-tools.php:339
 msgid "Robots.txt File"
 msgstr ""
 
-#: webmaster-tools.php:313
+#: webmaster-tools.php:347
 msgid ""
 "You may edit your robots.txt file in the space below. Lines beginning with "
 "<code>#</code> are treated as comments. If you don't understand what your "
 "doing, most likly you don't need to do anything."
 msgstr ""
 
-#: webmaster-tools.php:314
+#: webmaster-tools.php:348
 msgid ""
 "Using your robots.txt file, you can ban specific robots, ban all robots, or "
 "block robot access to specific pages or areas of your site. If you are not "
 "sure what to type, look at the bottom of this page for examples."
 msgstr ""
 
-#: webmaster-tools.php:315
+#: webmaster-tools.php:349
 msgid "To Disable all search engines from browsing your site, see the"
 msgstr ""
 
-#: webmaster-tools.php:315 webmaster-tools.php:333
+#: webmaster-tools.php:349 webmaster-tools.php:367
 msgid "Privacy Settings"
 msgstr ""
 
-#: webmaster-tools.php:315
+#: webmaster-tools.php:349
 msgid "page."
 msgstr ""
 
-#: webmaster-tools.php:316
+#: webmaster-tools.php:350
 msgid "Modify Your Robots.txt file"
 msgstr ""
 
-#: webmaster-tools.php:317
+#: webmaster-tools.php:351
 msgid "Your Current Robots.txt file"
 msgstr ""
 
-#: webmaster-tools.php:321
+#: webmaster-tools.php:355
 msgid "reset robots.txt"
 msgstr ""
 
-#: webmaster-tools.php:333
+#: webmaster-tools.php:367
 msgid ""
 "Privacy Settings are curently <strong>Blocking</strong> all search engines. "
 "Enable search engine browsing on the "
 msgstr ""
 
-#: webmaster-tools.php:333
+#: webmaster-tools.php:367
 msgid "page to be able to modify the robots.txt file."
 msgstr ""
 
-#: webmaster-tools.php:338
+#: webmaster-tools.php:372
 msgid "Save Changes"
 msgstr ""

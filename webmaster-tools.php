@@ -20,6 +20,10 @@ if(!empty($currentLocale)) {
 function add_mdr_webmaster_tools() {
    global $mdr_webmaster_tools_hook;
    $mdr_webmaster_tools_hook = add_submenu_page( 'tools.php', 'Site Verification Sittings', __('Webmaster Tools', WEBMASTER_TOOLS_TEXTDOMAIN), 'administrator', 'site_webmaster_tools', 'mdr_webmaster_tools_page' );
+   //add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_overview' );
+   add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_tools' );
+   //add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_analytics' );
+   add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_robots' );
 }
 
 
@@ -32,10 +36,24 @@ function register_mdr_webmaster_tools() {
   add_default_robots_txt();
 }
 
-function my_plugin_help($contextual_help, $screen_id, $screen) {
-	global $mdr_webmaster_tools_hook;
-	if ($screen_id == $mdr_webmaster_tools_hook) {
-		$contextual_help = '<p>'.__('Here\'s how you optain and setup each search engines key\'s', WEBMASTER_TOOLS_TEXTDOMAIN).':</p>
+
+// Adding the Help fucntions
+function webmastertools_help_overview() {
+    $screen = get_current_screen();
+    $screen->add_help_tab( array(
+        'id'      => 'webmastertools-plugin-help-overview', // This should be unique for the screen.
+        'title'   => __('Overview', WEBMASTER_TOOLS_TEXTDOMAIN),
+        'content' => ''
+    ) );
+}
+
+function webmastertools_help_tools() {
+    $screen = get_current_screen();
+    $screen->add_help_tab( array(
+        'id'      => 'webmastertools-plugin-help-tools', // This should be unique for the screen.
+        'title'   => __('Webmaster Tools', WEBMASTER_TOOLS_TEXTDOMAIN),
+        'content' => '<h3>'.__('Webmaster Tools', WEBMASTER_TOOLS_TEXTDOMAIN).'</h3>
+<p>'.__('Here\'s how you optain and setup each search engines key\'s', WEBMASTER_TOOLS_TEXTDOMAIN).':</p>
 <h4>' . __('Google Webmaster Tools', WEBMASTER_TOOLS_TEXTDOMAIN) . '</h4> 
 <ol> 
 <li>'.__('Log in to ', WEBMASTER_TOOLS_TEXTDOMAIN).'<a href="https://www.google.com/webmasters/tools/">https://www.google.com/webmasters/tools/</a> '.__('with your Google account.', WEBMASTER_TOOLS_TEXTDOMAIN).'</li> 
@@ -74,8 +92,25 @@ function my_plugin_help($contextual_help, $screen_id, $screen) {
 <li>'.__('Open the Tools Page and paste the code in the appropriate field.', WEBMASTER_TOOLS_TEXTDOMAIN).'</li> 
 <li>'.__('Click on <code>Save Changes</code>.', WEBMASTER_TOOLS_TEXTDOMAIN).'</li> 
 <li>'.__('Go back to the verification page and click <code>Return to the Site list</code>.', WEBMASTER_TOOLS_TEXTDOMAIN).'</li> 
-</ol> 
-<h3>'.__('The Robots.txt File', WEBMASTER_TOOLS_TEXTDOMAIN).'</h3>
+</ol>'
+    ) );
+}
+
+function webmastertools_help_analytics() {
+    $screen = get_current_screen();
+    $screen->add_help_tab( array(
+        'id'      => 'webmastertools-plugin-help-analytics', // This should be unique for the screen.
+        'title'   => __('Analytics', WEBMASTER_TOOLS_TEXTDOMAIN),
+        'content' => '<h3>'.__('Google Analytics Tracking', WEBMASTER_TOOLS_TEXTDOMAIN).'</h3>'
+    ) );
+}
+
+function webmastertools_help_robots() {
+    $screen = get_current_screen();
+    $screen->add_help_tab( array(
+        'id'      => 'webmastertools-plugin-help-robots', // This should be unique for the screen.
+        'title'   => __('Robots', WEBMASTER_TOOLS_TEXTDOMAIN),
+        'content' => '<h3>'.__('The Robots.txt File', WEBMASTER_TOOLS_TEXTDOMAIN).'</h3>
 <p>'.__('The <strong>robots.txt</strong> file is a way to prevent cooperating web spiders and other web robots from accessing all or part of a website which is otherwise publicly viewable. Robots are often used by search engines to categorize and archive web sites, or by webmasters to proofread source code.', WEBMASTER_TOOLS_TEXTDOMAIN).'</p>
 <h4>'.__('To Allow all robots', WEBMASTER_TOOLS_TEXTDOMAIN).'</h4>
 <p>'.__('To allow any robot to access your entire site, you can simply leave the robots.txt file blank, or you could use this', WEBMASTER_TOOLS_TEXTDOMAIN).':</p>
@@ -83,9 +118,8 @@ function my_plugin_help($contextual_help, $screen_id, $screen) {
 <h4'.__('>To Ban all robots', WEBMASTER_TOOLS_TEXTDOMAIN).'</h4> 
 <blockquote><pre>User-agent: *<br />Disallow: /</pre></blockquote>
 <h4>'.__('To Ban all crawlers from four directories of a website', WEBMASTER_TOOLS_TEXTDOMAIN).'</h4> 
-<blockquote><pre>User-agent: *<br />Disallow: /cgi-bin/<br />Disallow: /images/<br />Disallow: /tmp/<br />Disallow: /private/</pre></blockquote>';
-	}
-	return $contextual_help;
+<blockquote><pre>User-agent: *<br />Disallow: /cgi-bin/<br />Disallow: /images/<br />Disallow: /tmp/<br />Disallow: /private/</pre></blockquote>'
+    ) );
 }
 
 add_action( 'contextual_help', 'my_plugin_help', 10, 3 );
