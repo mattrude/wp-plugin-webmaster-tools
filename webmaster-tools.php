@@ -22,7 +22,7 @@ function add_mdr_webmaster_tools() {
    $mdr_webmaster_tools_hook = add_submenu_page( 'tools.php', 'Site Verification Sittings', __('Webmaster Tools', WEBMASTER_TOOLS_TEXTDOMAIN), 'administrator', 'site_webmaster_tools', 'mdr_webmaster_tools_page' );
    //add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_overview' );
    add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_tools' );
-   //add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_analytics' );
+   add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_analytics' );
    add_action( 'load-' . $mdr_webmaster_tools_hook, 'webmastertools_help_robots' );
 }
 
@@ -101,7 +101,8 @@ function webmastertools_help_analytics() {
     $screen->add_help_tab( array(
         'id'      => 'webmastertools-plugin-help-analytics', // This should be unique for the screen.
         'title'   => __('Analytics', WEBMASTER_TOOLS_TEXTDOMAIN),
-        'content' => '<h3>'.__('Google Analytics Tracking', WEBMASTER_TOOLS_TEXTDOMAIN).'</h3>'
+        'content' => '<h3>'.__('Google Analytics Tracking', WEBMASTER_TOOLS_TEXTDOMAIN).'</h3>
+<p><b>Google Analytics</b> is a free service offered by Google that generates detailed statistics about the visitors to a website. The product is aimed at marketers as opposed to webmasters and technologists from which the industry of web analytics originally grew. It is the most widely used website statistics service, currently in use on around 57% of the 10,000 most popular websites. Another market share analysis claims that Google Analytics is used at around 49.95% of the top 1,000,000 websites (as currently ranked by Alexa).</p>'
     ) );
 }
 
