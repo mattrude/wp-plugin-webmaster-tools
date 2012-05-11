@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: Webmaster Tools
-Plugin URI: http://github.com/mattrude/mdr-network
+Plugin Name: MDR Webmaster Tools
+Plugin URI: https://github.com/mattrude/wp-plugin-webmaster-tools
 Description: Provides Webmaster site verification scripts for Google, Yahoo, & Bing. Plugin also provides Google Analytics Tracking Script for registered sites. See Tools -> Webmaster Tools
 Version: 1.1
 Author: Matt Rude
@@ -123,7 +123,46 @@ function webmastertools_help_robots() {
     ) );
 }
 
-add_action( 'contextual_help', 'my_plugin_help', 10, 3 );
+/*
+ * Sitemap
+ */
+function sitemap_flush_rules() {
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules();
+}
+
+add_action('init', 'sitemap_flush_rules');
+
+function xml_feed_rewrite($wp_rewrite) {
+    $feed_rules = array(
+        '.*sitemap.xml$' => 'index.php?feed=sitemap'
+    );
+
+    $wp_rewrite->rules = $feed_rules + $wp_rewrite->rules;
+}
+
+add_filter('generate_rewrite_rules', 'xml_feed_rewrite');
+
+
+// Remove the trailing slash from URI sitemap.xml
+function sitemap_no_trailing_slash( $redirect_url ) {
+    if ( is_feed() && strpos( $redirect_url, 'sitemap.xml/' ) !== FALSE )
+        return;
+
+    return $redirect_url;
+}
+
+add_filter( 'redirect_canonical', 'sitemap_no_trailing_slash' );
+
+
+function do_feed_sitemap() {
+    $template_dir = dirname(__FILE__) . '/templates';
+    load_template( $template_dir . '/feed-sitemap.php' );
+}
+
+add_action('do_feed_sitemap', 'do_feed_sitemap', 10, 1);
+
+//add_action( 'contextual_help', 'my_plugin_help', 10, 3 );
 add_action( 'admin_menu', 'add_mdr_webmaster_tools' );
 add_action( 'admin_init', 'register_mdr_webmaster_tools' );
 add_action( 'wp_head', 'head_mdr_webmaster_tools' );
@@ -190,7 +229,8 @@ function add_default_robots_txt() {
 	if (!$site_robots_txt_out) {
 		$site_robots_txt_default = "# This is the default robots.txt file
 User-agent: *
-Disallow:
+Disallow: */feed/
+Disallow: */page/
 
 Sitemap: $site_url/sitemap.xml";
 		update_option('site_robots_txt', $site_robots_txt_default);
@@ -346,7 +386,7 @@ function mdr_webmaster_tools_page() {
 	  $private_url = 'http://' . $_SERVER['HTTP_HOST'] . '/wp-admin/options-privacy.php'; ?>
 
           <p><?php _e('You may edit your robots.txt file in the space below. Lines beginning with <code>#</code> are treated as comments. If you don\'t understand what your doing, most likly you don\'t need to do anything.', WEBMASTER_TOOLS_TEXTDOMAIN); ?></p>
-          <p><?php _e('Using your robots.txt file, you can ban specific robots, ban all robots, or block robot access to specific pages or areas of your site. If you are not sure what to type, look at the bottom of this page for examples.', WEBMASTER_TOOLS_TEXTDOMAIN); ?></p>
+          <p><?php _e('Using your robots.txt file, you can ban specific robots, ban all robots, or block robot access to specific pages or areas of your site. If you are not sure what to type, look in the <em>help</em> button on the top right of this screen.', WEBMASTER_TOOLS_TEXTDOMAIN); ?></p>
 	  <p><?php _e('To Disable all search engines from browsing your site, see the', WEBMASTER_TOOLS_TEXTDOMAIN); ?> <a href="<?php echo $private_url; ?>"><?php _e('Privacy Settings', WEBMASTER_TOOLS_TEXTDOMAIN); ?></a> <?php _e('page.', WEBMASTER_TOOLS_TEXTDOMAIN); ?></p>
 	  <div class="robots_txt_in_lable"><strong><?php _e('Modify Your Robots.txt file', WEBMASTER_TOOLS_TEXTDOMAIN); ?>:</strong></div>
 	  <div class="robots_txt_out_lable"><strong><?php _e('Your Current Robots.txt file', WEBMASTER_TOOLS_TEXTDOMAIN); ?>:</strong></div>
