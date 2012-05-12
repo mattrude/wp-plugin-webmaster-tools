@@ -33,6 +33,12 @@ body {
     color: #A9A9A9;
     font-size: 0.8em;
 }
+
+#breadcrums {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 8px;
+}
+
 h2 {
     font-weight: normal;
     margin-bottom: 8px;
