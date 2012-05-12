@@ -18,7 +18,7 @@ See Tools -> Webmaster Tools
 There are several diffrent way's of downloading and installing this plugin, both via direct download & git.
 
 * Devel Version: [Download zip](https://github.com/mattrude/wp-plugin-webmaster-tools/zipball/master)
-* Version 1.1: [Download zip](http://downloads.wordpress.org/plugin/mdr-webmaster-tools.1.1.zip)
+* Version 1.1: [Download zip](https://github.com/downloads/mattrude/wp-plugin-webmaster-tools/mdr-webmaster-tools.1.1.zip)
 
 ## Installation
 As with most WordPress plugins, there is two ways of installing this plugin.
@@ -47,7 +47,6 @@ As with most WordPress plugins, there is two ways of installing this plugin.
 ## Plugin's Meta Data 
 
 * Author: **[Matt Rude](http://mattrude.com/)**
-* Plugin URL: **http://mattrude.com/projects/mdr-webmaster-tools/**
 * Requires at least: **3.3**
 * Tested up to: **3.4**
 * Stable tag: **1.1**
