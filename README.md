@@ -44,7 +44,7 @@ As with most WordPress plugins, there is two ways of installing this plugin.
 1. Move into your plugins directory `cd wp-content/plugins`
 1. Clone the current revision with the command `git clone git://github.com/mattrude/wp-plugin-webmaster-tools.git`
 
-### Plugin's Meta Data 
+## Plugin's Meta Data 
 
 * Author: **[Matt Rude](http://mattrude.com/)**
 * Plugin URL: **http://mattrude.com/projects/mdr-webmaster-tools/**
