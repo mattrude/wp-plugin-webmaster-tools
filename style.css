@@ -37,6 +37,7 @@ body {
 #breadcrums {
     border-bottom: 1px solid #CCCCCC;
     margin-bottom: 8px;
+    padding: 0 2px;
 }
 
 h2 {
