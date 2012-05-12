@@ -12,13 +12,6 @@ This plugin is fully translatable with the full POT file included.
 
 For Support, please contact me via the [WordPress Forums](http://wordpress.org/tags/mdr-webmaster-tools?forum_id=10#postform), if you find a bug, please create a ticket on it's [Github Issues](https://github.com/mattrude/wp-plugin-webmaster-tools/issues) page.
 
-* Contributors: **mattrude**
-* Author URI: **http://mattrude.com/**
-* Plugin URI: **http://mattrude.com/projects/mdr-webmaster-tools/**
-* Requires at least: **3.3**
-* Tested up to: **3.4**
-* Stable tag: **1.1**
-
 See Tools -> Webmaster Tools
 
 ## Download
@@ -50,6 +43,14 @@ As with most WordPress plugins, there is two ways of installing this plugin.
 1. Log onto your web server via SSH or Telnet, and go into the directory that holds your WordPress install.
 1. Move into your plugins directory `cd wp-content/plugins`
 1. Clone the current revision with the command `git clone git://github.com/mattrude/wp-plugin-webmaster-tools.git`
+
+### Plugin's Meta Data 
+
+* Author: **[Matt Rude](http://mattrude.com/)**
+* Plugin URL: **http://mattrude.com/projects/mdr-webmaster-tools/**
+* Requires at least: **3.3**
+* Tested up to: **3.4**
+* Stable tag: **1.1**
 
 ## Changelog
 
