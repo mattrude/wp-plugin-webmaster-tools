@@ -47,9 +47,9 @@ As with most WordPress plugins, there is two ways of installing this plugin.
 ## Plugin's Meta Data 
 
 * Author: **[Matt Rude](http://mattrude.com/)**
-* Requires at least: **3.3**
-* Tested up to: **3.4**
-* Stable tag: **1.1**
+* Requires at least WordPress: **3.3**
+* Tested up to WordPress: **3.4**
+* Current Stable Version of Plugin: **1.1**
 
 ## Changelog
 
