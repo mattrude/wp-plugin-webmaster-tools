@@ -1,0 +1,378 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: webmaster-tools 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-06 22:42-0600\n"
+"PO-Revision-Date: 2013-11-04 15:21+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: webmaster-tools.php:22 webmaster-tools.php:54 webmaster-tools.php:55
+#: webmaster-tools.php:254
+msgid "Webmaster Tools"
+msgstr "Webmaster tools"
+
+#: webmaster-tools.php:45
+msgid "Overview"
+msgstr "Pregled"
+
+#: webmaster-tools.php:56
+msgid "Here's how you optain and setup each search engines key's"
+msgstr "Evo kako održavate i pristupate ključu prtraživača"
+
+#: webmaster-tools.php:57 webmaster-tools.php:259 webmaster-tools.php:268
+msgid "Google Webmaster Tools"
+msgstr "Google Webmaster Tools"
+
+#: webmaster-tools.php:59
+msgid "Log in to "
+msgstr "Uloguj se u"
+
+#: webmaster-tools.php:59
+msgid "with your Google account."
+msgstr "sa Google nalogu."
+
+#: webmaster-tools.php:60
+msgid "Enter your blog URL and click <code>Add Site</code>."
+msgstr "Unesite vaš URL bloga i kliknite na <code>Dodaj sajt</code>."
+
+#: webmaster-tools.php:61
+msgid ""
+"You will be presented with several verification methods. Choose <code>Meta "
+"Tag</code>."
+msgstr ""
+"Biće vam predstavljeno nekoliko verifikacionih metoda. Izaberite <code>Meta "
+"Tag</code>."
+
+#: webmaster-tools.php:62 webmaster-tools.php:75
+msgid "Copy the meta tag, which looks something like"
+msgstr "Kopirajte meta tag koji izgleda nešzo kao"
+
+#: webmaster-tools.php:64 webmaster-tools.php:77 webmaster-tools.php:91
+msgid "Leave the verification page open and go to your blog dashboard."
+msgstr ""
+"Ostavite verifikacionu stranicu otvorenu i idite na oglasnu tablu vašeg "
+"bloga."
+
+#: webmaster-tools.php:65 webmaster-tools.php:78 webmaster-tools.php:92
+msgid "Open the Tools Page and paste the code in the appropriate field."
+msgstr "Otvorite stranicu sa altkama i paste-ujte kod u odgovarajuće polje."
+
+#: webmaster-tools.php:66 webmaster-tools.php:79 webmaster-tools.php:93
+msgid "Click on <code>Save Changes</code>."
+msgstr "Klik na <code>Sačuvaj promene</code>."
+
+#: webmaster-tools.php:67
+msgid "Go back to the verification page and click <code>Verify</code>."
+msgstr ""
+"Vratite se na verifikacionu stranicu i kliknite na <code>Verifikuj</code>."
+
+#: webmaster-tools.php:70
+msgid "Yahoo Site Explorer"
+msgstr "Yahoo Site Explorer"
+
+#: webmaster-tools.php:72 webmaster-tools.php:86
+msgid "Log in to"
+msgstr "Uloguj se na"
+
+#: webmaster-tools.php:72
+msgid "with your Yahoo account."
+msgstr "sa Yahoo naloga."
+
+#: webmaster-tools.php:73
+msgid "Enter your blog URL and click <code>Add My Site</code>."
+msgstr "Unesite vaš URL bloga i kliknite na  <code>Dodaj moj sajt</code>."
+
+#: webmaster-tools.php:74
+msgid ""
+"You will be presented with several authentication methods. Choose <code>By "
+"adding a META tag to my home page.</code>."
+msgstr ""
+"Biće vam predstavljeno nekoliko autentičnih metoda. Izaberite "
+"<code>Dodavanjem META tag na moju početnu stranicu.</code>."
+
+#: webmaster-tools.php:80
+msgid ""
+"Go back to the verification page and click <code>Ready to Authenticate</"
+"code>."
+msgstr ""
+"Idite na verifikicaju stranice i kliknite na <code>Spremno za "
+"autentifikaciju</code>."
+
+#: webmaster-tools.php:82
+msgid "Note: It may take up to 24 hours for your site to be authenticated."
+msgstr "Beleška: Možda će trebati 24 časa  da se sajt autentifikuje."
+
+#: webmaster-tools.php:84 webmaster-tools.php:262 webmaster-tools.php:288
+msgid "Bing Webmaster Center"
+msgstr "Bing Webmaster centar"
+
+#: webmaster-tools.php:86
+msgid "with your Live! account."
+msgstr "sa vašim Live! nalogom."
+
+#: webmaster-tools.php:87
+msgid "Click <code>Add a Site</code>."
+msgstr "Klik na <code>Dodaj sajt</code>."
+
+#: webmaster-tools.php:88
+msgid "Enter your blog URL and click <code>Submit</code>."
+msgstr "Unesite svoj URL bloga i kliknite na <code>Podnesi</code>."
+
+#: webmaster-tools.php:89
+msgid ""
+"Copy the meta tag from the text area at the bottom. It looks something like"
+msgstr "Kopirajte meta tag iz dela sa tekstom na dnu. Izgleda nešto kao"
+
+#: webmaster-tools.php:94
+msgid ""
+"Go back to the verification page and click <code>Return to the Site list</"
+"code>."
+msgstr ""
+"Idite na verifikicaju stranice i kliknite na <code>Nazad na list sajta</"
+"code>."
+
+#: webmaster-tools.php:103
+msgid "Analytics"
+msgstr "Analytics"
+
+#: webmaster-tools.php:104
+msgid "Google Analytics Tracking"
+msgstr "Google Analytics Tracking"
+
+#: webmaster-tools.php:112
+msgid "Robots"
+msgstr "Roboti"
+
+#: webmaster-tools.php:113
+msgid "The Robots.txt File"
+msgstr "Robots.txt fajl"
+
+#: webmaster-tools.php:114
+msgid ""
+"The <strong>robots.txt</strong> file is a way to prevent cooperating web "
+"spiders and other web robots from accessing all or part of a website which "
+"is otherwise publicly viewable. Robots are often used by search engines to "
+"categorize and archive web sites, or by webmasters to proofread source code."
+msgstr ""
+"<strong>robots.txt</strong> fajl je način da sačuvate kooperativne web "
+"paukove i ostale web robote od pristupanja svim delovima websajta kojji je "
+"inače dostupan javnosti. Roboti se često koriste od strane pretraživača i "
+"arhiva web sajtova ili webmastera za dokazivanje surce koda."
+
+#: webmaster-tools.php:115
+msgid "To Allow all robots"
+msgstr "Za dozvoljavanje svih robota"
+
+#: webmaster-tools.php:116
+msgid ""
+"To allow any robot to access your entire site, you can simply leave the "
+"robots.txt file blank, or you could use this"
+msgstr ""
+"Da biste dozvolili bilo kom robotu da pristupi vašem celom sajtu, "
+"jednostavno možete da ostavite robots.txt fajl praznim, ili da iskoristite "
+"ovo"
+
+#: webmaster-tools.php:118
+msgid ">To Ban all robots"
+msgstr ">Da biste zabranili sve robote"
+
+#: webmaster-tools.php:120
+msgid "To Ban all crawlers from four directories of a website"
+msgstr ""
+"Da biste zabranili sve crawlerse sa sve četiri direktorijuman vašeg websajta"
+
+#: webmaster-tools.php:220 webmaster-tools.php:231
+msgid "You cannot edit this screen."
+msgstr "Ne možete da editujete ekran."
+
+#: webmaster-tools.php:256
+msgid "Site Verification"
+msgstr "Verifikacija sajta"
+
+#: webmaster-tools.php:257
+msgid ""
+"All three major search engines provide webmaster tools that give you "
+"detailed information and statistics about how they see and crawl your "
+"website. In order to access most of the features, you will have to verify "
+"your sites."
+msgstr ""
+"Sva tri veća pretraživača omogućavaju webmaster alatke koje vam daju "
+"detaljne informacije i statistike o tome kako vide i sklupljaju vaš sajt. Da "
+"biste pristupili većini karakteristika, morate da verifikujete sajtove. "
+
+#: webmaster-tools.php:258
+msgid "Enter your meta key \"content\" value to verify your blog with"
+msgstr ""
+"Unesite vaš meta ključ  \"content\" vrednost da biste verifikovali vaš bnlog "
+"sa"
+
+#: webmaster-tools.php:260 webmaster-tools.php:278
+msgid "Yahoo! Site Explorer"
+msgstr "Yahoo! Site Explorer"
+
+#: webmaster-tools.php:261
+msgid "and"
+msgstr "i"
+
+#: webmaster-tools.php:271 webmaster-tools.php:281 webmaster-tools.php:291
+#: webmaster-tools.php:310 webmaster-tools.php:328
+msgid "Disabled"
+msgstr "Onemogući"
+
+#: webmaster-tools.php:271 webmaster-tools.php:281 webmaster-tools.php:291
+#: webmaster-tools.php:310 webmaster-tools.php:330
+msgid "Enabled"
+msgstr "Omogući"
+
+#: webmaster-tools.php:275 webmaster-tools.php:285 webmaster-tools.php:295
+#: webmaster-tools.php:314
+msgid "Example"
+msgstr "Primer"
+
+#: webmaster-tools.php:302
+msgid "Google Analytics Tracking Script"
+msgstr "Google Analytics Tracking Script"
+
+#: webmaster-tools.php:303 webmaster-tools.php:304
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: webmaster-tools.php:303
+msgid ""
+"is a web analytics solution that gives you rich insights into your website "
+"traffic and marketing effectiveness. Powerful, flexible and easy-to-use "
+"features now let you see and analyze your traffic data in an entirely new "
+"way. With Google Analytics, you're more prepared to write better-targeted "
+"ads, strengthen your marketing initiatives and create higher converting "
+"websites."
+msgstr ""
+"je web analytics rešenje koja vam daje bogat uvid u saobraćaj vašeg sajta i "
+"marketing efektivnost . Moćne, fleksibilne i jednostavne za korišćenje "
+"funkcije sada omogućavaju da vidite i analizu podataka o saobraćaju na "
+"potpuno nov način . Pomoću Google Analytics , vi ste spremniji da pišete "
+"bolje ciljane oglase , ojačate svoje marketinške inicijative i stvorite veće "
+"pretvaranje sajtova ."
+
+#: webmaster-tools.php:304
+msgid "Enter your"
+msgstr "Unesite vaš"
+
+#: webmaster-tools.php:304
+msgid "Account ID"
+msgstr "ID naloga"
+
+#: webmaster-tools.php:304
+msgid "for this site, to allow"
+msgstr "za ovaj sajt, dozvoliti"
+
+#: webmaster-tools.php:304
+msgid "to track you page views."
+msgstr "da biste pratili preglede vaše stranice."
+
+#: webmaster-tools.php:307
+msgid "Google Analytics Tracking ID"
+msgstr "Google Analytics Tracking ID"
+
+#: webmaster-tools.php:321
+msgid "CDN Network URL"
+msgstr "CDN Network URL"
+
+#: webmaster-tools.php:322
+msgid "A"
+msgstr "A"
+
+#: webmaster-tools.php:322
+msgid "Content Delivery Network (CDN)"
+msgstr "Content Delivery Network (CDN)"
+
+#: webmaster-tools.php:322
+msgid ""
+"is a system of computers containing copies of data, placed at various points "
+"in a network so as to maximize bandwidth for access to the data from clients "
+"throughout the network. A client accesses a copy of the data near to the "
+"client, as opposed to all clients accessing the same central server, so as "
+"to avoid bottlenecks near that server."
+msgstr ""
+"je sistem računara koji sadrži kopije podataka , postavljene na različitim "
+"tačkama u mreži kako bi se maksimizirao bandwidth za pristup podacima sa "
+"klijentima širom mreže . Klijent pristupa kopiji podataka blizu klijenta , "
+"za razliku od svih klijenata koji pristupaju na isti centralni server , kako "
+"bi se izbegle prepreke blizu tog servera."
+
+#: webmaster-tools.php:325
+msgid "CDN Site URL"
+msgstr "CDN Site URL"
+
+#: webmaster-tools.php:339
+msgid "Robots.txt File"
+msgstr "Robots.txt fajl"
+
+#: webmaster-tools.php:347
+msgid ""
+"You may edit your robots.txt file in the space below. Lines beginning with "
+"<code>#</code> are treated as comments. If you don't understand what your "
+"doing, most likly you don't need to do anything."
+msgstr ""
+"Možete da edirujete vaš robots.txt fajl u prostoru ispod. Rečenice koje "
+"počinju sa <code>#</code> su tretirane kao komentari. Ako ne razumete šta "
+"radite, nemojte ništa ni da radite."
+
+#: webmaster-tools.php:348
+msgid ""
+"Using your robots.txt file, you can ban specific robots, ban all robots, or "
+"block robot access to specific pages or areas of your site. If you are not "
+"sure what to type, look at the bottom of this page for examples."
+msgstr ""
+"Korišćenjem vašeg robots.txt fajla možete zabraniti odredjene robote, sve "
+"robote ili blokirati pristup odredjenjim stranicama ili oblastima vašeg "
+"sajta. Ako niste sigurni šta da ukucate potražite na dnu stranice primere."
+
+#: webmaster-tools.php:349
+msgid "To Disable all search engines from browsing your site, see the"
+msgstr "Da biste onemogućili sve pretraživače iz vašeg sajta, pogledajte"
+
+#: webmaster-tools.php:349 webmaster-tools.php:367
+msgid "Privacy Settings"
+msgstr "Postavke o privatnosti"
+
+#: webmaster-tools.php:349
+msgid "page."
+msgstr "stranice."
+
+#: webmaster-tools.php:350
+msgid "Modify Your Robots.txt file"
+msgstr "Modifikujte vaš Robots.txt fajl"
+
+#: webmaster-tools.php:351
+msgid "Your Current Robots.txt file"
+msgstr "Vaš trenutni Robots.txt fajl"
+
+#: webmaster-tools.php:355
+msgid "reset robots.txt"
+msgstr "resetuj Robots.txt"
+
+#: webmaster-tools.php:367
+msgid ""
+"Privacy Settings are curently <strong>Blocking</strong> all search engines. "
+"Enable search engine browsing on the "
+msgstr ""
+"Postavke o privatnosti su trenutno <strong>Blokirati</strong>  sve "
+"pretraživače. Omogući pretragu pretraživača na"
+
+#: webmaster-tools.php:367
+msgid "page to be able to modify the robots.txt file."
+msgstr "stranica mora biti sposobna da bi se modefikovao  robots.txt file."
+
+#: webmaster-tools.php:372
+msgid "Save Changes"
+msgstr "Sačuvaj promene"

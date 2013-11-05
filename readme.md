@@ -53,6 +53,9 @@ As with most WordPress plugins, there is two ways of installing this plugin.
 
 ## Changelog
 
+### Version 1.2
+* Added Serbo-Croatian translation, props Borisa Djuraskovic
+
 ### Version 1.1
 * Initial Version
 
